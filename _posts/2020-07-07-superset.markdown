@@ -1,0 +1,112 @@
+---
+layout:     post
+title:      "Superset "
+subtitle:   "可视化工具"
+date:       2020-07-07 12:00:00
+author:     "Hok"
+header-img: "img/post-bg-superset.jpg"
+catalog: true
+tags:
+   - python
+   - mysql
+   
+---
+
+前几天了解到一个比较好玩的可视化工具Superset
+
+> 作为数据展示，BI是一个非常好的工具
+> 作为一个pythoner，学习使用superset也是非常必要的事情
+> 官网安装过程介绍，
+>
+> [https://superset.incubator.apache.org/installation.html#python-virtualenv](https://links.jianshu.com/go?to=https%3A%2F%2Fsuperset.incubator.apache.org%2Finstallation.html%23python-virtualenv
+
+![post-in-superset](/img/post-in-superset.jpg)
+
+## 产品简介
+
+superset是airbnb开源的一款BI产品，支持多种数据库连接，拥有丰富的图表类型，其部署方便，制作看板迅速，能够款速方便的实现数据分析和可视化，是个人和小企业自助BI的不错选择。superset支持的数据源众多，旨在实现数据源插入即使用的理念。
+
+## 本机环境
+
+python3.6+
+win10 64位
+
+## 开始安装
+
+使用anaconda来创建虚拟环境
+
+1. 下载anaconda3 https://www.anaconda.com/products/individual
+
+   ![post-superset-anaconda](\img\in-post\post-superset-anaconda.jpg)
+
+2. 创建一个叫superset的环境
+
+   ```
+   # conda create -n superset python=3.6
+   ```
+
+3. 激活虚拟环境
+
+   ```
+   # activate superset
+   ```
+
+4. 安装superset
+   国内采用阿里镜像安装
+
+   ```
+   # pip install apache-superset -i https://mirrors.aliyun.com/pypi/simple
+   ```
+
+5. 字符格式报错
+
+   改字符格式为ANSI
+
+   下载专用的whl包(vc++ 包python-geohash安装)
+
+   进入 [https://www.lfd.uci.edu/~gohlke/pythonlibs/](https://links.jianshu.com/go?to=https%3A%2F%2Fwww.lfd.uci.edu%2F~gohlke%2Fpythonlibs%2F)
+
+   找到对应python3.6的版本
+
+6. 安装离线包
+
+   ```
+   # pip install F:/python_geohash-0.8.5-cp36-cp36m-win_amd64.whl
+   ```
+
+7. 安装数据库驱动包
+
+   ```
+   # pip install pymysql
+   ```
+
+
+
+## 初始化
+
+```
+# 初始化数据库
+python superset db upgrade
+
+# 新建账号密码
+python superset fab create-admin
+
+# 加载案例
+python superset load_examples
+
+# 初始化角色和权限
+python superset init
+
+# 开启服务器8088端口
+python superset run -p 8088 --with-threads --reload --debugger
+
+```
+
+然后	
+
+打开浏览器 http://127.0.0.1:8088/
+
+![post-superset-ds](/img/in-post/post-superset-ds.jpg)
+
+开心玩耍~~
+

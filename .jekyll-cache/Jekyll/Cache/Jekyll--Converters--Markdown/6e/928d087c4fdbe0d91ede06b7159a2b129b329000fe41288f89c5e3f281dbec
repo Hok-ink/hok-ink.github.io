@@ -1,0 +1,123 @@
+I"�<p>前几天了解到一个比较好玩的可视化工具Superset</p>
+
+<blockquote>
+  <p>作为数据展示，BI是一个非常好的工具
+作为一个pythoner，学习使用superset也是非常必要的事情
+官网安装过程介绍，</p>
+
+  <p>[https://superset.incubator.apache.org/installation.html#python-virtualenv](https://links.jianshu.com/go?to=https%3A%2F%2Fsuperset.incubator.apache.org%2Finstallation.html%23python-virtualenv</p>
+</blockquote>
+
+<p><img src="/img/post-in-superset.jpg" alt="post-in-superset" /></p>
+
+<h2 id="产品简介">产品简介</h2>
+
+<p>superset是airbnb开源的一款BI产品，支持多种数据库连接，拥有丰富的图表类型，其部署方便，制作看板迅速，能够款速方便的实现数据分析和可视化，是个人和小企业自助BI的不错选择。superset支持的数据源众多，旨在实现数据源插入即使用的理念。</p>
+
+<h2 id="本机环境">本机环境</h2>
+
+<p>python3.6+
+win10 64位</p>
+
+<h2 id="开始安装">开始安装</h2>
+
+<p>使用anaconda来创建虚拟环境</p>
+
+<ol>
+  <li>
+    <p>下载anaconda3 https://www.anaconda.com/products/individual</p>
+
+    <p><img src="\img\in-post\post-superset-anaconda.jpg" alt="post-superset-anaconda" /></p>
+  </li>
+  <li>
+    <p>创建一个叫superset的环境</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre># conda create -n superset python=3.6
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li>
+    <p>激活虚拟环境</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre># activate superset
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li>
+    <p>安装superset
+国内采用阿里镜像安装</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre># pip install apache-superset -i https://mirrors.aliyun.com/pypi/simple
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li>
+    <p>字符格式报错</p>
+
+    <p>改字符格式为ANSI</p>
+
+    <p>下载专用的whl包(vc++ 包python-geohash安装)</p>
+
+    <p>进入 <a href="https://links.jianshu.com/go?to=https%3A%2F%2Fwww.lfd.uci.edu%2F~gohlke%2Fpythonlibs%2F">https://www.lfd.uci.edu/~gohlke/pythonlibs/</a></p>
+
+    <p>找到对应python3.6的版本</p>
+  </li>
+  <li>
+    <p>安装离线包</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre># pip install F:/python_geohash-0.8.5-cp36-cp36m-win_amd64.whl
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li>
+    <p>安装数据库驱动包</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre># pip install pymysql
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="初始化">初始化</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre></td><td class="rouge-code"><pre># 初始化数据库
+python superset db upgrade
+
+# 新建账号密码
+python superset fab create-admin
+
+# 加载案例
+python superset load_examples
+
+# 初始化角色和权限
+python superset init
+
+# 开启服务器8088端口
+python superset run -p 8088 --with-threads --reload --debugger
+
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>然后</p>
+
+<p>打开浏览器 http://127.0.0.1:8088/</p>
+
+<p><img src="/img/in-post/post-superset-ds.jpg" alt="post-superset-ds" /></p>
+
+<p>开心玩耍~~</p>
+
+:ET
