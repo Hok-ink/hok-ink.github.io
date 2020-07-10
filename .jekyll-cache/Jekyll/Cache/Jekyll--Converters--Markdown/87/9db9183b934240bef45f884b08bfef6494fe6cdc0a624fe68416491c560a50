@@ -1,0 +1,53 @@
+I"�<h3 id="从本地复制到远程">从本地复制到远程</h3>
+
+<p>复制<strong>文件</strong>命令：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre># 将本地地址/home/hok/file中的a.txt文件 复制到 远程服务器192.168.1.1 的/home/zhx/file中
+ scp /home/hok/file/a.txt root@192.168.1.1:/home/zhx/file/
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre># 将本地地址/home/hok/file中的a.txt文件 复制到 远程服务器192.168.1.1 的/home/zhx/file中并重命名为b.txt
+scp /home/hok/file/a.txt root@192.168.1.1:/home/zhx/file/b.txt
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>复制<strong>文件夹</strong>命令：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre># 将本地地址/home/hok/file中的a文件夹 复制到 远程服务器192.168.1.1 的/home/zhx/file文件夹中
+scp -r /home/hok/file/a root@192.168.1.1:/home/zhx/file/
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre># 将本地地址/home/hok/file中的a文件夹 复制到 远程服务器192.168.1.1 的/home/zhx/file文件夹中并重命名为b文件夹
+scp -r /home/hok/file/a root@192.168.1.1:/home/zhx/file/b
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="从远程复制到本地">从远程复制到本地</h3>
+
+<p>调换两个参数顺序</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre># scp root@192.168.1.1:/home/zhx/file/b.txt /home/hok/file/
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre># scp -r root@192.168.1.1:/home/zhx/file/b /home/hok/file/ 
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h4 id="注意">注意</h4>
+
+<p>如果远程服务器防火墙为scp命令设置了指定的端口，我们需要使用 -P (大写P)参数来设置命令的端口号</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>#scp 命令使用端口号 80
+# scp -P 80 root@192.168.1.1:/home/zhx/file/b.txt /home/hok/file/
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+:ET

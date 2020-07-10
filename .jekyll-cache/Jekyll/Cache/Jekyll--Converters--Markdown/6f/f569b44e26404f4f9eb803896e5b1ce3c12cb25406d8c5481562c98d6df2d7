@@ -1,0 +1,69 @@
+I"<blockquote>
+  <p>离开世界之前，一切都是过程。</p>
+</blockquote>
+
+<p>Hi，我是致学，一个编程小白，我曾被招募为碧桂园机器人公司的小二、微软某项目打杂助理工程师等。</p>
+
+<p>目前的物理活动范围主要在羊城，分身日常出没于<a href="https://b.hok.ink">博客</a>、<a href="https://weibo.com">微博</a>、B战。</p>
+
+<h5 id="编程语言倾向">编程语言倾向</h5>
+
+<p>我好像什么都不会</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>💔️</th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>😅</td>
+      <td><code class="highlighter-rouge">PHP</code> <code class="highlighter-rouge">BASIC</code></td>
+      <td><code class="highlighter-rouge">ObjC</code> <code class="highlighter-rouge">Prolog</code> <code class="highlighter-rouge">Hack</code></td>
+      <td><code class="highlighter-rouge">Kotlin</code> <code class="highlighter-rouge">Dart</code></td>
+      <td><code class="highlighter-rouge">Swift</code> <code class="highlighter-rouge">Agda</code> <code class="highlighter-rouge">Idris</code></td>
+    </tr>
+    <tr>
+      <td>🧐</td>
+      <td> </td>
+      <td><code class="highlighter-rouge">Asm</code> <code class="highlighter-rouge">C++</code>  <code class="highlighter-rouge">Lisp*</code></td>
+      <td><code class="highlighter-rouge">C++11</code> <code class="highlighter-rouge">C#</code> <code class="highlighter-rouge">AS3</code></td>
+      <td><code class="highlighter-rouge">Scala</code> <code class="highlighter-rouge">Rust</code></td>
+    </tr>
+    <tr>
+      <td>😏</td>
+      <td><code class="highlighter-rouge">Shell</code></td>
+      <td><code class="highlighter-rouge">C</code> <code class="highlighter-rouge">Java</code> <code class="highlighter-rouge">Python</code></td>
+      <td><code class="highlighter-rouge">Typed JS*</code> <code class="highlighter-rouge">Wasm</code></td>
+      <td><code class="highlighter-rouge">Haskell</code> <code class="highlighter-rouge">Coq</code> <code class="highlighter-rouge">ML*</code></td>
+    </tr>
+    <tr>
+      <td>🤓</td>
+      <td> </td>
+      <td><code class="highlighter-rouge">JavaScript</code></td>
+      <td><code class="highlighter-rouge">ECMAScript6</code></td>
+      <td><code class="highlighter-rouge">λ</code> <code class="highlighter-rouge">Λ</code> <code class="highlighter-rouge">Π</code> <code class="highlighter-rouge">Σ</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="大牛的演讲与分享来自hux">大牛的演讲与分享（来自Hux）</h5>
+
+<ul>
+  <li><a href="//huangxuan.me/jsconfcn2017/">Upgrading to Progressive Web Apps</a> · <a href="http://2017.jsconf.cn/">JSConf CN 上海 2017</a></li>
+  <li>Building Progressive Web Apps · <a href="http://www.csdisummit.com/">CSDI 广州 2017</a></li>
+  <li>The State of Progressive Web App · GDG IO Redux 北京 2017</li>
+  <li>炒冷饭 · PWA 到底是个什么玩意？· Baidu HQ 北京 2017</li>
+  <li><a href="//huangxuan.me/2016/11/20/sw-101-gdgdf/">Service Worker 101</a> · GDG DevFest 北京 2016</li>
+  <li><a href="//huangxuan.me/2016/10/20/pwa-qcon2016/">Progressive Web App，复兴序章</a> · <a href="http://2016.qconshanghai.com/presentation/3111">QCon 上海 2016</a></li>
+  <li>Progressive Web App 之我见 · GDG IO Redux 北京 2016</li>
+  <li><a href="//huangxuan.me/2015/12/28/css-sucks-2015/">CSS Still Sucks 2015</a> · 2015</li>
+  <li><a href="//huangxuan.me/2015/07/09/js-module-7day/">JavaScript 模块化七日谈</a> · 2015</li>
+</ul>
+
+:ET

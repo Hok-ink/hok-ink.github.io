@@ -1,0 +1,30 @@
+---
+layout:     post
+title:      "Hello 2020"
+subtitle:   " Hello World, Hello Blog"
+date:       2020-04-25 12:00:00
+author:     "Zhx"
+header-img: "img/Roblox-Egmont-BG.jpg"
+catalog: true
+tags:
+    - 生活
+    
+---
+
+“I got it. ”
+
+
+我的 Blog 就这么开通了。
+
+
+
+2020 年，有个地方可以好好折腾一下了。
+
+
+作为一个学渣
+
+尝试着写自己的第一篇blog
+
+Stay hungry Stay foolish
+
+![post-bridge](\img\post-bridge.jpg)

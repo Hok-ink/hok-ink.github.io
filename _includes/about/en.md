@@ -1,4 +1,4 @@
-> Your time is limited, so don’t waste it living someone else’s life. 
+> Everything is unknown
 
 Hi, I am _@Zhx_ (Zhi, Xue), a freshman in society.
 
@@ -6,11 +6,9 @@ In the past, I worked on Countrygarden and assistant under the project of Micros
 
 I studied BA at [XXX University of China] with a focus on programming languages theory and construction.
 
-
 ##### My Programming Languages Spectrum
 
-I generally prefer languages that 
-(In fact,I have no idea in any Programming Languages)
+##### (In fact,I have no idea in any Programming Languages)
 
 |     | 💔️           | ❤️ ️                   | ❤️❤️ ️             | ❤️❤️❤️ ️               |
 | --- | ------------- | ---------------------- | ------------------ | ---------------------- |

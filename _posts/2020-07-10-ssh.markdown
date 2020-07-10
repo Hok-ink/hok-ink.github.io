@@ -1,0 +1,62 @@
+---
+layout:     post
+title:      "SSH"
+subtitle:   " copy file"
+date:       2020-07-10 12:14:00
+author:     "Zhx"
+header-img: "img/post-bg-ssh.jpg"
+catalog: true
+tags:
+    - ssh
+   
+---
+
+### 从本地复制到远程
+
+复制**文件**命令：
+
+```
+# 将本地地址/home/hok/file中的a.txt文件 复制到 远程服务器192.168.1.1 的/home/zhx/file中
+ scp /home/hok/file/a.txt root@192.168.1.1:/home/zhx/file/
+```
+
+```
+# 将本地地址/home/hok/file中的a.txt文件 复制到 远程服务器192.168.1.1 的/home/zhx/file中并重命名为b.txt
+scp /home/hok/file/a.txt root@192.168.1.1:/home/zhx/file/b.txt
+```
+
+复制**文件夹**命令：
+
+```
+# 将本地地址/home/hok/file中的a文件夹 复制到 远程服务器192.168.1.1 的/home/zhx/file文件夹中
+scp -r /home/hok/file/a root@192.168.1.1:/home/zhx/file/
+```
+
+```
+# 将本地地址/home/hok/file中的a文件夹 复制到 远程服务器192.168.1.1 的/home/zhx/file文件夹中并重命名为b文件夹
+scp -r /home/hok/file/a root@192.168.1.1:/home/zhx/file/b
+```
+
+
+
+### 从远程复制到本地
+
+调换两个参数顺序
+
+```
+# scp root@192.168.1.1:/home/zhx/file/b.txt /home/hok/file/
+```
+
+```
+# scp -r root@192.168.1.1:/home/zhx/file/b /home/hok/file/ 
+```
+
+#### 注意 
+
+如果远程服务器防火墙为scp命令设置了指定的端口，我们需要使用 -P (大写P)参数来设置命令的端口号
+
+```
+#scp 命令使用端口号 80
+# scp -P 80 root@192.168.1.1:/home/zhx/file/b.txt /home/hok/file/
+```
+
